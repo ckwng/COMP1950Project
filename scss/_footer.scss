@@ -1,0 +1,15 @@
+
+
+footer {
+    background-color: $footer-background-color;
+    color: $highlight-color;
+    max-width: $nominal-desktop-width;
+    padding: $padding;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+footer a:link {
+    color: $highlight-color;
+    text-decoration: none;
+}
