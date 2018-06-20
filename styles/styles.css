@@ -4,11 +4,11 @@
 
 body {
   margin: 0px;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Heebo', sans-serif;
   font-size: 150%; }
 
 h1, h2, h3, nav a {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Cinzel', sans-serif;
   font-weight: bold; }
 
 .row {
@@ -24,7 +24,7 @@ article {
 .one-third {
   width: 33%; }
 
-.wrapper {
+body {
   background-color: lightgrey;
   display: flex;
   align-items: center;
@@ -35,10 +35,11 @@ article {
     flex-direction: column;
     align-items: center; } }
 header {
-  background-color: orangered;
+  background-color: #2a3670;
   position: sticky;
   top: 0;
-  z-index: 2; }
+  z-index: 2;
+  width: 1600px; }
 
 .header-content-wrap {
   display: flex;
@@ -53,21 +54,22 @@ header nav li {
 
 header h1 {
   margin: 30px;
-  color: white; }
+  color: #eeeeee; }
 
 .btn-menu {
   display: none;
   background-color: transparent;
   border: none;
   color: white;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Cinzel', sans-serif;
   font-weight: bold;
   font-size: 100%; }
 
 header a:link {
-  color: white; }
+  color: #eeeeee; }
 
 header li {
+  color: #eeeeee;
   display: block;
   font-weight: bold; }
 
@@ -89,12 +91,12 @@ header li {
   .header-content-wrap {
     flex-wrap: wrap; } }
 main h1, header h1, .top-banner h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Cinzel', sans-serif;
   font-weight: bold;
   font-size: 250%; }
 
 .bottom-banner p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Cinzel', sans-serif;
   font-weight: bold;
   font-size: 200%; }
 
@@ -105,11 +107,11 @@ section article h1 {
   font-size: 100%; }
 
 main {
-  max-width: 1600px;
+  width: 1600px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: white; }
+  background-color: #eee; }
 
 main h1, main h2 {
   text-align: center; }
@@ -117,14 +119,29 @@ main h1, main h2 {
 .top-banner {
   text-align: center; }
 
-.mid-banner {
+#banner {
   width: 100%;
-  position: relative; }
+  position: relative;
+  max-height: 400px;
+  overflow: hidden; }
 
-.mid-banner img {
+#banner img {
   width: 100%; }
 
-.mid-banner h2 {
+.grey-box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #ccccccaa;
+  width: 100%; }
+
+article {
+  background-color: #ddd;
+  padding: 35px 200px;
+  border-radius: 5px;
+  filter: drop-shadow(10px 10px 15px gray); }
+
+#banner h2 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -144,7 +161,7 @@ main h1, main h2 {
 
 .bottom-banner a {
   display: inline-block;
-  background-color: orangered;
+  background-color: #2a3670;
   padding: 30px;
   margin: 30px;
   color: white;

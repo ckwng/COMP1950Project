@@ -3,6 +3,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 2;
+    width: $nominal-desktop-width;
 }
 
 .header-content-wrap {
@@ -21,7 +22,7 @@ header nav li {
 
 header h1 {
     margin: $margin;
-    color: $content-background-color;
+    color: $header-content-color;
 }
 
 .btn-menu {
@@ -35,10 +36,11 @@ header h1 {
 
 
 header a:link {
-    color: $content-background-color;
+    color: $header-content-color;
 }
 
 header li {
+    color: $header-content-color;
     display: block;
     font-weight: bold;
 }

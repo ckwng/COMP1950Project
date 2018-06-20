@@ -19,7 +19,7 @@ section article h1 {
 }
 
 main {
-    max-width: $nominal-desktop-width;
+    width: $nominal-desktop-width;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -34,16 +34,33 @@ main h1, main h2 {
     text-align: center;
 }
 
-.mid-banner {
+#banner {
     width: 100%;
     position: relative;
+    max-height: 400px;
+    overflow: hidden;
 }
 
-.mid-banner img {
+#banner img {
     width: 100%;
 }
 
-.mid-banner h2 {
+.grey-box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #ccccccaa;
+    width: 100%;    
+}
+
+article {
+    background-color: $article-background-color;
+    padding: 35px 200px;
+    border-radius: 5px;
+    filter: drop-shadow(10px 10px 15px gray);
+}
+
+#banner h2 {
     @include center-on-parent;
 }
 
