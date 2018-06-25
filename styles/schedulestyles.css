@@ -1,13 +1,18 @@
 #schedule{
     display:grid;
+    width: 100%;
+     grid-template-columns: repeat(2, 400px);
+    padding: 10px;
     
 }
 #day{
-    border: 5px solid #2a3670;
+    border: 2px solid #2a3670;
     text-align: center;
-    
 }
 #day ul li  {
     list-style-type: none;
     display: none;
+}
+#day h1{
+    font-size: 90%;
 }
