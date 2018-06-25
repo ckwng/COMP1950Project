@@ -1,0 +1,13 @@
+#schedule{
+    display:grid;
+    
+}
+#day{
+    border: 5px solid #2a3670;
+    text-align: center;
+    
+}
+#day ul li  {
+    list-style-type: none;
+    display: none;
+}
