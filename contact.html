@@ -29,6 +29,24 @@
         </div>
     </div>
     <article>
+        <h2>Contact the instructor</h2>
+        <form>
+            <label for="firstname">First Name: </label>
+            <input type="text" id="firstname" name="firstname" required/>
+            <label for="lastname">Last Name: </label>
+            <input type="text" id="lastname" name="lastname" required/>
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" required pattern="[A-Za-z0-9!#$%&'*+-/=?^_`{|}~.]+@([A-Za-z0-9-]+\.)+[A-Za-z0-9-]+"/>
+            <label for="studentno">BCIT Student Number: </label>
+            <input type="text" id="studentno" name="studentno" />
+            
+            <label for="studenttype-prospective">Prospective Student</label>
+            <input type="radio" id="studenttype-prospective" name="studenttype" value="Prospective" />
+
+            <label for="studenttype-current">Current Student</label>
+            <input type="radio" id="studenttype-current" name="studenttype" value="Current" />
+
+        </form>
     </article>
 </main>
     
