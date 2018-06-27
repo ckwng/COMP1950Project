@@ -39,6 +39,10 @@ header a:link {
     color: $header-content-color;
 }
 
+header a:visited {
+    color: $header-content-color;
+}
+
 header li {
     color: $header-content-color;
     display: block;

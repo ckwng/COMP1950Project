@@ -68,6 +68,9 @@ header h1 {
 header a:link {
   color: #eeeeee; }
 
+header a:visited {
+  color: #eeeeee; }
+
 header li {
   color: #eeeeee;
   display: block;
@@ -135,11 +138,25 @@ main h1, main h2 {
   background-color: #ccccccaa;
   width: 100%; }
 
-article {
+#lesson-nav {
   background-color: #ddd;
-  padding: 35px 200px;
+  padding: 15px;
   border-radius: 5px;
   filter: drop-shadow(10px 10px 15px gray); }
+
+#lesson-nav ol {
+  display: flex;
+  justify-content: space-evenly; }
+
+#lesson-nav li {
+  display: block; }
+
+article {
+  background-color: #ddd;
+  padding: 35px;
+  border-radius: 5px;
+  filter: drop-shadow(10px 10px 15px gray);
+  min-width: 80%; }
 
 #banner h2 {
   position: absolute;
