@@ -30,10 +30,18 @@ body {
   align-items: center;
   flex-direction: column; }
 
+pre {
+  overflow: auto;
+  box-sizing: border-box; }
+
 @media only screen and (max-width: 1080px) {
   .row {
     flex-direction: column;
-    align-items: center; } }
+    align-items: center; }
+
+  pre {
+    width: 80%;
+    box-sizing: border-box; } }
 header {
   background-color: #2a3670;
   position: sticky;
@@ -76,6 +84,9 @@ header li {
   display: block;
   font-weight: bold; }
 
+@media only screen and (min-width: 1080px) and (max-width: 1600px) {
+  header {
+    width: 1080px; } }
 @media only screen and (max-width: 1080px) {
   .btn-menu {
     display: block; }
@@ -217,6 +228,20 @@ article {
 .active, .accordion:hover {
   background-color: #ccc; }
 
+@media only screen and (min-width: 1080px) and (max-width: 1600px) {
+  main {
+    width: 1080px; } }
+@media only screen and (max-width: 1080px) {
+  main {
+    width: 100%;
+    max-width: 100%; }
+
+  article {
+    min-width: 320px;
+    padding: 10px;
+    border-radius: 0px;
+    filter: none;
+    margin: 0px; } }
 footer {
   background-color: black;
   color: white;
@@ -228,5 +253,12 @@ footer {
 footer a:link {
   color: white;
   text-decoration: none; }
+
+@media only screen and (min-width: 1080px) and (max-width: 1600px) {
+  footer {
+    max-width: 1080px; } }
+@media only screen and (max-width: 1080px) {
+  footer {
+    max-width: 100%; } }
 
 /*# sourceMappingURL=styles.css.map */

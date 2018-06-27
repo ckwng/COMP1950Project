@@ -140,3 +140,24 @@ article {
 .active, .accordion:hover {
     background-color: #ccc;
 }
+
+@media only screen and (min-width: $nominal-tablet-width) and (max-width: $nominal-desktop-width) {
+    main {
+        width: $nominal-tablet-width;
+    }
+}
+
+@media only screen and (max-width: $nominal-tablet-width) {
+    main {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    article {
+        min-width: 320px;
+        padding: 10px;
+        border-radius: 0px;
+        filter: none;
+        margin: 0px;
+    }
+}

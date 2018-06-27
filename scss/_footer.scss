@@ -13,3 +13,15 @@ footer a:link {
     color: $highlight-color;
     text-decoration: none;
 }
+
+@media only screen and (min-width: $nominal-tablet-width) and (max-width: $nominal-desktop-width) {
+    footer {
+        max-width: $nominal-tablet-width;
+    }
+}
+
+@media only screen and (max-width: $nominal-tablet-width) {
+    footer {
+        max-width: 100%;
+    }
+}

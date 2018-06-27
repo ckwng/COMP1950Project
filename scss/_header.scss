@@ -49,7 +49,13 @@ header li {
     font-weight: bold;
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (min-width: $nominal-tablet-width) and (max-width: $nominal-desktop-width) {
+    header {
+        width: $nominal-tablet-width;
+    }
+}
+
+@media only screen and (max-width: $nominal-tablet-width) {
     .btn-menu {
         display: block;
     }
