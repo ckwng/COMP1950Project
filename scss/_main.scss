@@ -101,3 +101,42 @@ article {
     color: $highlight-color;
     font-weight: bold;
 }
+
+/* Schedule page css */
+#schedule{
+    display:grid;
+    width: 100%;
+     grid-template-columns: repeat(2, 500px);
+    grid-gap: 2em;
+    
+    padding-top:100px;
+    padding-bottom: 80px;
+    
+}
+#day{
+    box-shadow:0px 0px 2px 3px #2a3670;
+    border: 2px solid #2a3670;
+    text-align: center;
+    
+}
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 90%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 90%;
+}
+.agenda {
+    list-style-type: none;
+    display: none;
+}
+
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
