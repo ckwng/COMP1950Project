@@ -102,41 +102,31 @@ article {
     font-weight: bold;
 }
 
-/* Schedule page css */
-
-#day{
-    box-shadow:0px 0px 2px 3px #2a3670;
-    border: 2px solid #2a3670;
-    text-align: center;
-    
-    width: 100%;
-    
-    grid-gap: 2em;
-    
-    padding-top:100px;
-    padding-bottom: 80px;
-    
-}
-.accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 90%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-    font-size: 90%;
-}
-.agenda {
-    list-style-type: none;
-    display: none;
-    padding: 5px;
-}
 
 
-.active, .accordion:hover {
-    background-color: #ccc;
+
+<<<<<<< HEAD
+
+=======
+
+@media only screen and (min-width: $nominal-tablet-width) and (max-width: $nominal-desktop-width) {
+    main {
+        width: $nominal-tablet-width;
+    }
 }
-/* end of schedule stylings*/
+
+@media only screen and (max-width: $nominal-tablet-width) {
+    main {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    article {
+        min-width: 320px;
+        padding: 10px;
+        border-radius: 0px;
+        filter: none;
+        margin: 0px;
+    }
+}
+>>>>>>> 5e63bc7a83a87e14d2ccf455e7544601867a8866

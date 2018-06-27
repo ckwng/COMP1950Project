@@ -36,9 +36,19 @@ body {
     flex-direction: column;
 }
 
-@media only screen and (max-width: 1080px) {
+pre {
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: $nominal-tablet-width) {
     .row {
         flex-direction: column;
         align-items: center;
+    }
+
+    pre {
+        width: 80%;
+        box-sizing: border-box;
     }
 }
