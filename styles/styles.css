@@ -31,8 +31,8 @@ body {
   flex-direction: column; }
 
 pre {
-  overflow: auto;
-  box-sizing: border-box; }
+  margin: 20px;
+  background-color: #eee; }
 
 @media only screen and (max-width: 1080px) {
   .row {
@@ -238,7 +238,8 @@ article {
     padding: 10px;
     border-radius: 0px;
     filter: none;
-    margin: 0px; } }
+    margin: 0px;
+    width: 100%; } }
 footer {
   background-color: black;
   color: white;
