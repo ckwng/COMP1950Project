@@ -19,7 +19,7 @@ h1, h2, h3, nav a {
   width: 50%; }
 
 article {
-  margin: 30px; }
+  margin: 20px; }
 
 .one-third {
   width: 33%; }
@@ -47,7 +47,16 @@ header {
   position: sticky;
   top: 0;
   z-index: 2;
-  width: 1600px; }
+  width: 1600px;
+  display: flex;
+  align-items: center;
+  justify-items: center; }
+
+.title {
+  display: flex; }
+
+.title {
+  padding: 15px; }
 
 .header-content-wrap {
   display: flex;
@@ -55,13 +64,15 @@ header {
   align-items: center; }
 
 header nav ul {
-  display: flex; }
+  display: flex;
+  margin: 0px 0px;
+  padding: 0px 40px; }
 
 header nav li {
-  margin: 30px; }
+  margin: 20px; }
 
-header h1 {
-  margin: 30px;
+header h2 {
+  margin: 0px 20px;
   color: #eeeeee; }
 
 .btn-menu {
@@ -84,6 +95,15 @@ header li {
   display: block;
   font-weight: bold; }
 
+.hamburger {
+  background-color: transparent;
+  border: 2px #ccc solid;
+  color: #ccc;
+  font-size: 2em;
+  display: none;
+  margin: 10px;
+  border-radius: 5px; }
+
 @media only screen and (min-width: 1080px) and (max-width: 1600px) {
   header {
     width: 1080px; } }
@@ -92,7 +112,8 @@ header li {
     display: block; }
 
   header nav {
-    display: none; }
+    display: none;
+    background-color: gray; }
 
   .show header nav {
     display: block;
@@ -103,7 +124,20 @@ header li {
     align-items: center; }
 
   .header-content-wrap {
-    flex-wrap: wrap; } }
+    flex-wrap: wrap; }
+
+  .hamburger {
+    display: block; }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+
+  .title {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center; } }
 main h1, header h1, .top-banner h2 {
   font-family: 'Cinzel', sans-serif;
   font-weight: bold;
@@ -149,6 +183,9 @@ main h1, main h2 {
   background-color: #ccccccaa;
   width: 100%; }
 
+.grey-box h1 {
+  margin: 20px; }
+
 #lesson-nav {
   background-color: #ddd;
   padding: 15px;
@@ -169,14 +206,6 @@ article {
   filter: drop-shadow(10px 10px 15px gray);
   min-width: 80%; }
 
-#banner h2 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 250%; }
-
 .bottom-banner {
   background-color: #eee;
   width: 100%;
@@ -185,13 +214,13 @@ article {
   box-sizing: border-box; }
 
 .bottom-banner p {
-  margin: 30px; }
+  margin: 20px; }
 
 .bottom-banner a {
   display: inline-block;
   background-color: #2a3670;
   padding: 30px;
-  margin: 30px;
+  margin: 20px;
   color: white;
   font-weight: bold; }
 
@@ -200,6 +229,7 @@ article {
     width: 1080px; } }
 @media only screen and (max-width: 1080px) {
   main {
+    background-color: #ddd;
     width: 100%;
     max-width: 100%; }
 

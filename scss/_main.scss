@@ -53,6 +53,10 @@ main h1, main h2 {
     width: 100%;    
 }
 
+.grey-box h1 {
+    margin: $margin;
+}
+
 #lesson-nav {
     background-color: $article-background-color;
     padding: 15px;
@@ -75,10 +79,6 @@ article {
     border-radius: 5px;
     filter: drop-shadow(10px 10px 15px gray);
     min-width: 80%;
-}
-
-#banner h2 {
-    @include center-on-parent;
 }
 
 .bottom-banner {
@@ -115,6 +115,7 @@ article {
 
 @media only screen and (max-width: $nominal-tablet-width) {
     main {
+        background-color: $article-background-color;
         width: 100%;
         max-width: 100%;
     }

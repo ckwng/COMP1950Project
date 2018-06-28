@@ -4,6 +4,17 @@ header {
     top: 0;
     z-index: 2;
     width: $nominal-desktop-width;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.title {
+    display: flex;
+}
+
+.title {
+    padding: 15px;
 }
 
 .header-content-wrap {
@@ -14,14 +25,16 @@ header {
 
 header nav ul {
     display: flex;
+    margin: 0px 0px;
+    padding: 0px 40px;
 }
 
 header nav li {
     margin: $margin;
 }
 
-header h1 {
-    margin: $margin;
+header h2 {
+    margin: 0px $margin;
     color: $header-content-color;
 }
 
@@ -49,6 +62,16 @@ header li {
     font-weight: bold;
 }
 
+.hamburger {
+    background-color: transparent;
+    border: 2px #ccc solid;
+    color: #ccc;
+    font-size: 2em;
+    display: none;
+    margin: 10px;
+    border-radius: 5px;
+}
+
 @media only screen and (min-width: $nominal-tablet-width) and (max-width: $nominal-desktop-width) {
     header {
         width: $nominal-tablet-width;
@@ -62,6 +85,7 @@ header li {
 
     header nav {
         display: none;
+        background-color: $secondary-background-color;
     }
 
     .show header nav {
@@ -76,5 +100,21 @@ header li {
 
     .header-content-wrap {
         flex-wrap: wrap;
+    }
+
+    .hamburger {
+        display: block;
+    }
+    
+    header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .title {
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
     }
 }
