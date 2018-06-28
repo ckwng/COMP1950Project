@@ -14,6 +14,11 @@ footer a:link {
     text-decoration: none;
 }
 
+footer a:visited {
+    color: $highlight-color;
+    text-decoration: none;
+}
+
 @media only screen and (min-width: $nominal-tablet-width) and (max-width: $nominal-desktop-width) {
     footer {
         max-width: $nominal-tablet-width;

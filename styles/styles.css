@@ -252,6 +252,10 @@ footer a:link {
   color: white;
   text-decoration: none; }
 
+footer a:visited {
+  color: white;
+  text-decoration: none; }
+
 @media only screen and (min-width: 1080px) and (max-width: 1600px) {
   footer {
     max-width: 1080px; } }
