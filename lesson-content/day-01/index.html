@@ -6,9 +6,15 @@
 <title>Comp 1950 - Web Dev</title>
 <link rel="stylesheet" href="../../styles/styles.css">
 <link href="https://fonts.googleapis.com/css?family=Cinzel|Heebo" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../../scripts/menu.js"></script>
 </head>
 <body>
     <header>
+            <div class="title">
+                <a href="../../index.html"><h2>COMP 1950</h2></a>
+                <button class="hamburger">⋯</button>
+            </div>
         <nav id="navbar">
             <ul>
                 <li><a href="../../">Home</a></li>
@@ -262,7 +268,7 @@
             <li>Write structurally valid HTML code: <a href="http://validator.w3.org/">W3C HTML validator</a></li>
             <li>Write syntactically valid CSS code: <a href="http://jigsaw.w3.org/css-validator/">W3C CSS validator</a></li>
             <li>Include a <a href="http://validator.w3.org/check?uri=referer">referer link</a> on all your HTML pages: </li>
-            <code>&lt;a href="http://validator.w3.org/check?uri=referer"&gt;validate&lt;/a&gt;</code>
+            <pre><code>&lt;a href="http://validator.w3.org/check?uri=referer"&gt;validate&lt;/a&gt;</code></pre>
         </ul>
         <h2>Semantic Markup</h2>
             Highly <a href="https://html.com/semantic-markup/">semantic HTML content</a> is crucial for usability, accessibilty and search engine optimization.
